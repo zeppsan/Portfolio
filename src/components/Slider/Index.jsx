@@ -1,7 +1,6 @@
 import Slider from "react-slick"
 import {useRef} from "react"
-import PrevArrow from "./PrevArrow";
-import NextArrow from "./NextArrow";
+import Image from 'next/image'
 
 const ImageCarousel = (props) => {
 
@@ -22,7 +21,7 @@ const ImageCarousel = (props) => {
         <Slider ref={sliderRef} settings={settings} className="">
             {props.images.map(item => {
                 return (
-                    <div key={Math.random()} className="h-full"><img src={item} className="w-full h-full"/></div>
+                    <div key={Math.random()} className="h-full"><Image src={item} className="w-full h-full" alt="Portfolio image"/></div>
                 )
             })}
         </Slider>

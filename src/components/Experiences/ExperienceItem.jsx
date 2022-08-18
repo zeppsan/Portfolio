@@ -1,10 +1,10 @@
-
+import Image from 'next/image'
 
 const ExperienceItem = (props) => {
     return (
         <div className="grid grid-flow-col grid-cols-10 mt-3">
             <div className="col-span-1">
-                <img src={"logos/" + props.image + ".png"} className="w-16"/>
+                <Image src={"logos/" + props.image + ".png"} className="w-16" alt="Logo of experience"/>
             </div>
             <div className="col-span-9 flex flex-col">
                 <p className="text-sm text-slate-700 font-bold px-2">{props.title}</p>

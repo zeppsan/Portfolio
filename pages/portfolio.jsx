@@ -8,7 +8,7 @@ export default function Home() {
             <div className="pb-10">
                 <div className="pt-20 w-4/5 mx-auto text-center">
                     <p className="text-4xl text-gray-500 font-semibold">Portfolio</p>
-                    <p className="text-xl">These are some of the projects that I've worked on that are worth mentioning.</p>
+                    <p className="text-xl">These are some of the projects that I&apos;ve worked on that are worth mentioning.</p>
                 </div>
 
                 <PortfolioItem 
