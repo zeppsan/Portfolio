@@ -40,7 +40,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-1/2 order-1 md:order-2 flex flex-col items-center justify-center md:justify-end">
-              <Image src="/eric.png" className="w-1/3 mt-40 md:mt-0 md-mt-0 md:w-2/3" alt="Eric Qvarnström"/>
+              <img src="/eric.png" width="100px" height="100px" className="w-1/3 mt-40 md:mt-0 md-mt-0 md:w-2/3" alt="Eric Qvarnström"/>
               <div className="py-4">
                 <PortfolioLanguage language="javascript"/>
                 <PortfolioLanguage language="php"/>
