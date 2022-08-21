@@ -20,7 +20,7 @@ export default function Home() {
     }, []);
 
     if(isLoading)
-        return "Loading...";
+        return <DefaultLayout />;
 
     if(!isLoading){
         console.log(experiences);
@@ -33,7 +33,7 @@ export default function Home() {
                         {experiences.map(item => {
                             console.log(item);
                             const fields = item.attributes
-                            const logo = fields.logo.data[0].attributes.url
+                            const logo = fields.logo.data.attributes.url
                             if(fields.type == "worklife")
                                 return <ExperienceItem title={fields.title} content={fields.content} period={fields.period} image={process.env.NEXT_PUBLIC_API_URL + logo}/>
                         })}
@@ -44,7 +44,7 @@ export default function Home() {
                     <div className="px-3">
                         {experiences.map(item => {
                             const fields = item.attributes
-                            const logo = fields.logo.data[0].attributes.url
+                            const logo = fields.logo.data.attributes.url
                             if(fields.type == "education")
                                 return <ExperienceItem title={fields.title} content={fields.content} period={fields.period} image={process.env.NEXT_PUBLIC_API_URL + logo}/>
                         })}
