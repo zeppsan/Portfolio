@@ -21,7 +21,7 @@ const ImageCarousel = (props) => {
         <Slider ref={sliderRef} settings={settings} className="">
             {props.images.map(item => {
                 return (
-                    <div key={Math.random()} className="h-full"><img layout='fill' src={item} className="w-full h-full" alt="Portfolio image"/></div>
+                    <div key={Math.random()} className="h-full"><img layout='fill' src={process.env.NEXT_PUBLIC_API_URL + item} className="w-full h-full" alt="Portfolio image"/></div>
                 )
             })}
         </Slider>
