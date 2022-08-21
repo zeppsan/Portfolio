@@ -29,10 +29,9 @@ export default function Home() {
           transition={{ stiffness: 100, duration: 0.6}}
           className="w-full md:w-4/5 lg:w-2/3 md:mx-auto flex flex-col justify-around md:flex-row items-center h-screen md:text-left text-center">
             <div className="w-4/5 md:w-1/2 order-2 md:order-1">
-              <p className="text-4xl text-gray-500 font-bold">Hello!👋 I&apos;m</p>
-              <p className="text-4xl text-gray-500 font-bold">Eric Qvarnström</p>
+              <h1 className="text-4xl text-gray-500 font-bold">Hello!👋 I&apos;m <br/>Eric Qvarnström</h1>
               <p className="mt-1 bg-blue-300 inline-block px-4 text-sm text-white rounded-md ">Junior Fullstack Developer</p>
-              <p className="text-xl text-gray-500 font-bold mt-3">A creative code-loving macgyver-like developer from Sweden. Want to know more? Please contact me and let me introduce myself properly!</p>
+              <h2 className="text-xl text-gray-500 font-bold mt-3">A creative code-loving macgyver-like developer from Sweden. Want to know more? Please contact me and let me introduce myself properly!</h2>
 
               <div className="mt-3 pb-10">
                 <button className="bg-blue-400 text-gray-200 font-bold text-xl p-2 px-5 shadow transition-all hover:shadow-xl hover:text-white rounded-md" onClick={togglePopup}>Lets Talk</button>
