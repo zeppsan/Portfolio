@@ -38,6 +38,7 @@ export default function Home() {
                                     initial={{x:-220, opacity: 0}}
                                     animate={{x:0, opacity: 1}}
                                     transition={{duration: 0.7, delay: worklifeDelay}}
+                                    key={Math.random()}
                                 >
                                     <ExperienceItem title={fields.title} content={fields.content} period={fields.period} image={process.env.NEXT_PUBLIC_API_URL + logo}/>
                                 </motion.div>
@@ -58,6 +59,7 @@ export default function Home() {
                                     initial={{x:-120, opacity: 0}}
                                     animate={{x:0, opacity: 1}}
                                     transition={{duration: 0.7, delay: educationDelay}}
+                                    key={Math.random()}
                                 >
                                     <ExperienceItem title={fields.title} content={fields.content} period={fields.period} image={process.env.NEXT_PUBLIC_API_URL + logo}/>
                                 </motion.div>

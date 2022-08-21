@@ -40,6 +40,7 @@ export default function Home() {
                                 initial={{x:-220, opacity: 0}}
                                 animate={{x:0, opacity: 1}}
                                 transition={{duration: 0.7, delay: delay}}
+                                key={Math.random()}
                             >
                                 <PortfolioItem key={Math.random()} title={fields.title} roles={fields.roles} content={fields.content} languages={fields.Languages.Languages} images={images}/>
                             </motion.div>
