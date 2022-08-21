@@ -6,7 +6,7 @@ const PortfolioItem = (props) => {
         <div className="w-full lg:w-4/5 lg:mx-auto flex flex-col lg:flex-row justify-around lg:text-left text-center mt-10 shadow-2xl rounded-xl p-5 items-center">
             <div className="w-full lg:w-1/2 order-2 lg:order-1">
                 <div className="p-3">
-                    <p className="text-2xl text-gray-500 font-bold hidden lg:block">{props.title}</p>
+                    <h3 className="text-2xl text-gray-500 font-bold hidden lg:block">{props.title}</h3>
                     <p className="text-gray-500 font-bold">{props.roles}</p>
                     <p className="text-md text-gray-500 mt-2 pr-3">{props.content}</p>
 
