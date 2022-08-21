@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react"
-
+import {motion} from 'framer-motion'
 import DefaultLayout from '../src/layouts/default'
 import PortfolioItem from '../src/components/Portfolio/PortfolioItem'
 
@@ -7,6 +7,7 @@ export default function Home() {
 
     const [portfolioItems, setPortfolioItems] = useState();
     const [isLoading, setLoading] = useState(true);
+    let delay = 0;
 
     useEffect(() => {
         fetch('/api/portfolio-entries')
@@ -30,10 +31,19 @@ export default function Home() {
                     
                     {!isLoading? portfolioItems.map(item => {
                         const fields = item.attributes
+                        delay += 0.2
                         const images = fields.images.data.map(image => {
                             return image.attributes.url
                         })
-                        return <PortfolioItem key={Math.random()} title={fields.title} roles={fields.roles} content={fields.content} languages={fields.Languages.Languages} images={images}/>
+                        return (
+                            <motion.div
+                                initial={{x:-220, opacity: 0}}
+                                animate={{x:0, opacity: 1}}
+                                transition={{duration: 0.7, delay: delay}}
+                            >
+                                <PortfolioItem key={Math.random()} title={fields.title} roles={fields.roles} content={fields.content} languages={fields.Languages.Languages} images={images}/>
+                            </motion.div>
+                        );
                     }): null}
                 </div>
 
