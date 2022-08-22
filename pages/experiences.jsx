@@ -40,7 +40,7 @@ export default function Home() {
                                     transition={{duration: 0.7, delay: worklifeDelay}}
                                     key={Math.random()}
                                 >
-                                    <ExperienceItem title={fields.title} content={fields.content} period={fields.period} image={process.env.NEXT_PUBLIC_API_URL + logo}/>
+                                    <ExperienceItem title={fields.title} content={fields.content} period={fields.period} image={process.env.NEXT_PUBLIC_API_URL + logo} role={fields.role}/>
                                 </motion.div>
                             );
                     }): null}
@@ -61,7 +61,7 @@ export default function Home() {
                                     transition={{duration: 0.7, delay: educationDelay}}
                                     key={Math.random()}
                                 >
-                                    <ExperienceItem title={fields.title} content={fields.content} period={fields.period} image={process.env.NEXT_PUBLIC_API_URL + logo}/>
+                                    <ExperienceItem title={fields.title} content={fields.content} period={fields.period} image={process.env.NEXT_PUBLIC_API_URL + logo} role={fields.role}/>
                                 </motion.div>
                             );
                     }): null}

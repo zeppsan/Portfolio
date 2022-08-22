@@ -7,6 +7,7 @@ const ExperienceItem = (props) => {
             </div>
             <div className="col-span-9 flex flex-col">
                 <h3 className="text-sm text-slate-700 font-bold px-2">{props.title}</h3>
+                <p className="text-sm text-slate-600 font-bold px-2">{props.role}</p>
                 <p className="text-sm text-slate-600 font-bold px-2">{props.period}</p>
                 <p className="text-sm text-slate-600 px-2">{props.content}</p>
             </div>
