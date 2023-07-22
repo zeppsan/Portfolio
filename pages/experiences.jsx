@@ -6,7 +6,7 @@ import ExperienceItem from '../src/components/Experiences/ExperienceItem'
 
 export default function Home() {
 
-    const [experiences, setExperiences] = useState();
+    const [experiences, setExperiences] = useState([]);
     const [isLoading, setLoading] = useState(true);
 
     let worklifeDelay = 0, educationDelay = 0;
@@ -15,11 +15,18 @@ export default function Home() {
         fetch('/api/experiences')
         .then(res => res.json())
         .then(res => {
+            console.log(res);
             setExperiences(res.data);
             setLoading(false)
         })
         .catch(err => console.log(err))
     }, []);
+
+    if(isLoading)
+        return "loading";
+
+    if(experiences.length == 0)
+        return "empty"
 
     return (
         <DefaultLayout>
