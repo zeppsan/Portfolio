@@ -51,14 +51,14 @@ export default function Home() {
                 <PortfolioLanguage imgext="png" language="react"/>
                 <PortfolioLanguage imgext="png" language="ubuntu"/>
                 <PortfolioLanguage imgext="png" language="docker"/>
-                <PortfolioLanguage imgext="svg" language="function apps"/>
+                <PortfolioLanguage imgext="svg" language="function_apps"/>
                 <PortfolioLanguage imgext="svg" language="VM's"/>
-                <PortfolioLanguage imgext="svg" language="app Services"/>
-                <PortfolioLanguage imgext="svg" language="Active Directory"/>
-                <PortfolioLanguage imgext="svg" language="Api Management"/>
+                <PortfolioLanguage imgext="svg" language="app_Services"/>
+                <PortfolioLanguage imgext="svg" language="Active_Directory"/>
+                <PortfolioLanguage imgext="svg" language="Api_Management"/>
                 <PortfolioLanguage imgext="svg" language="CosmosDB"/>
-                <PortfolioLanguage imgext="svg" language="Logic Apps"/>
-                <PortfolioLanguage imgext="svg" language="Service Bus"/>
+                <PortfolioLanguage imgext="svg" language="Logic_Apps"/>
+                <PortfolioLanguage imgext="svg" language="Service_Bus"/>
               </div>
             </div>
             {showPopup == true? <Popup close={togglePopup} />: null}

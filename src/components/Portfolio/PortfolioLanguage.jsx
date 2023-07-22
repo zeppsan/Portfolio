@@ -2,6 +2,8 @@ import Image from 'next/image'
 
 const PortfolioLanguage = ({language, imgext})=> {
 
+    let lang = language.charAt(0).toUpperCase() + language.slice(1);
+    lang = lang.replace('_', ' ');
 
     return (
         <div className="inline-block px-1">
