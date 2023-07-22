@@ -31,7 +31,7 @@ export default function Home() {
             <div className="w-4/5 md:w-1/2 order-2 md:order-1">
               <h1 className="text-4xl text-gray-500 font-bold">Hello!👋 I&apos;m <br/>Eric Qvarnström</h1>
               <p className="mt-1 bg-blue-300 inline-block px-4 text-sm text-white rounded-md ">Azure Consultant</p>
-              <h2 className="text-xl text-gray-500 font-bold mt-3">Are you ready to venture into a world of boundless creativity and Azure-driven possibilities? Don't hesitate to reach out for a conversation that unveils a world of innovation and passion. Let's craft a future where technology and imagination merge seamlessly!</h2>
+              <h2 className="text-xl text-gray-500 font-bold mt-3">Are you ready to venture into a world of boundless creativity and Azure-driven possibilities? Don&apos;t hesitate to reach out for a conversation that unveils a world of innovation and passion. Let&apos;s craft a future where technology and imagination merge seamlessly!</h2>
 
               <div className="mt-3 pb-10">
                 <button className="bg-blue-400 text-gray-200 font-bold text-xl p-2 px-5 shadow transition-all hover:shadow-xl hover:text-white rounded-md" onClick={togglePopup}>Lets Talk</button>
