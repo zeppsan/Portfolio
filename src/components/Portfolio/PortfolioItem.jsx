@@ -12,7 +12,7 @@ const PortfolioItem = (props) => {
 
                     <div className=" mt-3">
                         {props.languages.map(lang => {
-                            return (<PortfolioLanguage key={Math.random()} language={lang}/>)
+                            return (<PortfolioLanguage key={Math.random()} language={lang.language} imgext={lang.imagext}/>)
                         })}
                     </div>
                 </div>

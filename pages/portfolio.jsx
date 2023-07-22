@@ -35,6 +35,7 @@ export default function Home() {
                         const images = fields.images.data.map(image => {
                             return image.attributes.url
                         })
+                        console.log(item);
                         return (
                             <motion.div
                                 initial={{x:-220, opacity: 0}}
@@ -42,7 +43,7 @@ export default function Home() {
                                 transition={{duration: 0.7, delay: delay}}
                                 key={Math.random()}
                             >
-                                <PortfolioItem key={Math.random()} title={fields.title} roles={fields.roles} content={fields.content} languages={fields.Languages.Languages} images={images}/>
+                                <PortfolioItem key={Math.random()} title={fields.title} roles={fields.roles} content={fields.content} languages={fields.Languages.languages} images={images}/>
                             </motion.div>
                         );
                     }): null}
