@@ -16,7 +16,11 @@ export default function Home() {
         .then(res => res.json())
         .then(res => {
             console.log(res);
-            setExperiences(res.data);
+            setExperiences(res.data.sort((a, b) => {
+                if(new Date(a.attributes.startdate) > new Date(b.attributes.startdate))
+                    return -1;
+                return 1;
+            }));
             setLoading(false)
         })
         .catch(err => console.log(err))

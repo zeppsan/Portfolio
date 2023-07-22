@@ -30,8 +30,8 @@ export default function Home() {
           className="w-full md:w-4/5 lg:w-2/3 md:mx-auto flex flex-col justify-around md:flex-row items-center h-screen md:text-left text-center">
             <div className="w-4/5 md:w-1/2 order-2 md:order-1">
               <h1 className="text-4xl text-gray-500 font-bold">Hello!👋 I&apos;m <br/>Eric Qvarnström</h1>
-              <p className="mt-1 bg-blue-300 inline-block px-4 text-sm text-white rounded-md ">Junior Fullstack Developer</p>
-              <h2 className="text-xl text-gray-500 font-bold mt-3">A creative code-loving macgyver-like developer from Sweden. Want to know more? Please contact me and let me introduce myself properly!</h2>
+              <p className="mt-1 bg-blue-300 inline-block px-4 text-sm text-white rounded-md ">Azure Consultant</p>
+              <h2 className="text-xl text-gray-500 font-bold mt-3">Are you ready to venture into a world of boundless creativity and Azure-driven possibilities? Don't hesitate to reach out for a conversation that unveils a world of innovation and passion. Let's craft a future where technology and imagination merge seamlessly!</h2>
 
               <div className="mt-3 pb-10">
                 <button className="bg-blue-400 text-gray-200 font-bold text-xl p-2 px-5 shadow transition-all hover:shadow-xl hover:text-white rounded-md" onClick={togglePopup}>Lets Talk</button>
@@ -41,20 +41,24 @@ export default function Home() {
             <div className="w-full md:w-1/2 order-1 md:order-2 flex flex-col items-center justify-center md:justify-end">
               <img src="/eric.png" width="100px" height="100px" className="w-1/3 mt-40 md:mt-0 md-mt-0 md:w-2/3" alt="Eric Qvarnström"/>
               <div className="py-4">
-                <PortfolioLanguage language="javascript"/>
-                <PortfolioLanguage language="php"/>
-                <PortfolioLanguage language="laravel"/>
-                <PortfolioLanguage language="csharp"/>
-                <PortfolioLanguage language="nodejs"/>
-                <PortfolioLanguage language="mysql"/>
-                <PortfolioLanguage language="express"/>
-                <PortfolioLanguage language="react"/>
-                <PortfolioLanguage language="stripe"/>
-                <PortfolioLanguage language="sequelize"/>
-                <PortfolioLanguage language="ubuntu"/>
-                <PortfolioLanguage language="docker"/>
-                <PortfolioLanguage language="apple"/>
-                <PortfolioLanguage language="whmcs"/>
+                <PortfolioLanguage imgext="png" language="javascript"/>
+                <PortfolioLanguage imgext="png" language="php"/>
+                <PortfolioLanguage imgext="png" language="laravel"/>
+                <PortfolioLanguage imgext="png" language="csharp"/>
+                <PortfolioLanguage imgext="png" language="nodejs"/>
+                <PortfolioLanguage imgext="png" language="mysql"/>
+                <PortfolioLanguage imgext="png" language="express"/>
+                <PortfolioLanguage imgext="png" language="react"/>
+                <PortfolioLanguage imgext="png" language="ubuntu"/>
+                <PortfolioLanguage imgext="png" language="docker"/>
+                <PortfolioLanguage imgext="svg" language="function apps"/>
+                <PortfolioLanguage imgext="svg" language="VM's"/>
+                <PortfolioLanguage imgext="svg" language="app Services"/>
+                <PortfolioLanguage imgext="svg" language="Active Directory"/>
+                <PortfolioLanguage imgext="svg" language="Api Management"/>
+                <PortfolioLanguage imgext="svg" language="CosmosDB"/>
+                <PortfolioLanguage imgext="svg" language="Logic Apps"/>
+                <PortfolioLanguage imgext="svg" language="Service Bus"/>
               </div>
             </div>
             {showPopup == true? <Popup close={togglePopup} />: null}
